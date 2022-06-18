@@ -13,7 +13,8 @@ export const globalStyles = (
       }
       html,
       body {
-        background: #111;
+        background: #121212;
+        color: #f7f7f7;
         min-height: 100%;
         font-family: JetBrains Mono, monospace;
         font-size: 16px;
