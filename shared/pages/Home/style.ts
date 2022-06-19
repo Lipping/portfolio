@@ -1,4 +1,6 @@
+import { ClassNames } from "@emotion/react";
 import styled from "@emotion/styled";
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 
 export const Container = styled.div`
@@ -52,6 +54,7 @@ export const Button = styled.div`
     font-weight: 400;
     cursor: pointer;
     border: 1px solid #64FFDA;
+    
     &:hover {
         background-color: #64FFDA;
         color: #121212;
@@ -132,9 +135,21 @@ export const SocialMediaIcon = styled.img`
     `;
 
 export const Line = styled.div`
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
     height: 1px;
     background-color: #b1b1b1;
+
+    animation: slideIn 4s; 
+    @keyframes slideIn {
+    0% {
+        width: 0%;
+    }
+    100% {
+       width: 100%;
+    }
+    }
     `;
 
 export const TextImageBox = styled.div`
@@ -168,11 +183,14 @@ export const ImageBox = styled.div`
     `;
 
 export const ImageBackLine = styled.div`
-display: block;
+    display: block;
     width: 304px;
     height:304px;
     border:1px solid #64FFDA;
     margin-top: 16px;
+    &:hover {
+        background-color: #64FFDA;
+    }
     `;
 
 export const ImageContainer = styled.div`
@@ -184,6 +202,15 @@ export const ImageContainer = styled.div`
     height:304px;
     position: absolute;
     margin-left: -16px;
+    cursor:pointer;
+    color: #64FFDA;
+    background-color: #64FFDA;
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        margin-top: -16px;
+        margin-left: -32px;
+        border: 1px solid #64FFDA;
+    }
     `;
 
 export const Image = styled.img`
@@ -284,3 +311,6 @@ export const TagName = styled.p`
     margin-bottom: -40px;
     `;
 
+export const a = styled.a` 
+    text-decoration: none;
+`;

@@ -9,7 +9,7 @@ export default function Home() {
         <Header>
           <Logo src="/assets/logo.svg"/>
           <Nav>
-            <Button>Resume</Button>
+            <a href="/assets/iconTwitter.svg" download><Button>Resume</Button></a>
           </Nav>
         </Header>
         <Main>
@@ -29,7 +29,7 @@ export default function Home() {
             <SocialMediaButton href="https://www.linkedin.com/in/felipelages/" target="_blank"><SocialMediaIcon src="/assets/iconLinkedin.svg"></SocialMediaIcon></SocialMediaButton>
             <SocialMediaButton href="https://github.com/Lipping" target="_blank"><SocialMediaIcon src="/assets/iconGithub.svg"></SocialMediaIcon></SocialMediaButton>
           </SocialMediaLinks>
-          <Button>Email me</Button>
+          <a href="mailto:felipelagesstefenoni@gmail.com"><Button>Email me</Button></a>
         </ContactLinks>
         </Main>
         <Line />
@@ -137,7 +137,7 @@ export default function Home() {
             <ImageContainer>
               <Image src="assets/profile.jpeg" />
             </ImageContainer>
-            <ImageBackLine />
+            <ImageBackLine  />
           </ImageBox>
           </TextImageBox>
         </Main>
@@ -159,7 +159,7 @@ export default function Home() {
           <TagName>What`s next?</TagName>
           <Subtitle>Get in touch</Subtitle>
           <Text>If you have any questions, please don’t hesitate to contact me.</Text>
-          <Button>Say Hello</Button>
+          <a href="mailto:felipelagesstefenoni@gmail.com"><Button>Say Hello</Button></a>
         </Main>
         <Text>Designed with Figma & Built using React by Felipe Lages Stefenoni</Text>
       </Content>

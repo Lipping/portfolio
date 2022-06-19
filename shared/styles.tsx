@@ -20,6 +20,10 @@ export const globalStyles = (
         font-size: 16px;
         text-align: left;
       }
+      a {
+        text-decoration: none;
+        color:#f7f7f7;
+      }
     `}
   />
 )
