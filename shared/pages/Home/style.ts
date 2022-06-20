@@ -1,6 +1,4 @@
-import { ClassNames } from "@emotion/react";
 import styled from "@emotion/styled";
-import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 
 export const Container = styled.div`
@@ -10,7 +8,7 @@ export const Container = styled.div`
     justify-content: flex-start;
     width: 100vw;
     height: 100vh;
-`;
+    `;
 
 export const Content = styled.div`
     display: flex;
@@ -180,6 +178,11 @@ export const TextSide = styled.p`
 export const ImageBox = styled.div`
     display: flex;
     width: 304px;
+    &:hover > div {
+        transition: all 0.5s ease-in-out;
+        background-color: #64FFDA;
+    }
+
     `;
 
 export const ImageBackLine = styled.div`
@@ -209,14 +212,13 @@ export const ImageContainer = styled.div`
         transition: all 0.5s ease-in-out;
         margin-top: -16px;
         margin-left: -32px;
-        border: 1px solid #64FFDA;
     }
     `;
 
 export const Image = styled.img`
     width: 500px;
     height:auto;
-`;
+    `;
 
 export const CardBox = styled.div`
     display:flex;
@@ -225,7 +227,7 @@ export const CardBox = styled.div`
     justify-content: flex-start;
     gap:17px;
     max-width: 100%;
-`;
+    `;
 
 export const Card = styled.div`
     display: flex;
@@ -248,7 +250,6 @@ export const Card = styled.div`
     @media (max-width: 480px) {
         width: 100%;
     }
-        
     `;
 
 export const CardContent = styled.div`
@@ -258,12 +259,12 @@ export const CardContent = styled.div`
     width: 100%;
     gap: 24px;
     padding: 0 32px;
-`;
+    `;
 
 export const CardIcon = styled.img`
     width: auto;
     height:auto;
-`;
+    `;
 
 export const Works = styled.div`
     display: flex;
@@ -311,6 +312,20 @@ export const TagName = styled.p`
     margin-bottom: -40px;
     `;
 
-export const a = styled.a` 
-    text-decoration: none;
-`;
+export const CenterContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:40px;
+    `;
+
+export const InvertedTitle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+    gap:40px;
+    `;

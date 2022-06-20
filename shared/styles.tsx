@@ -24,6 +24,8 @@ export const globalStyles = (
         text-decoration: none;
         color:#f7f7f7;
       }
+
+      
     `}
   />
 )

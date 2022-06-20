@@ -1,4 +1,4 @@
-import { Button, Card, CardBox, CardContent, CardIcon, Companies, ContactLinks, Container, Content, Duration, Header, Image, ImageBackLine, ImageBox, ImageContainer, Line, Logo, Main, Nav, Roles, RolesAndDuration, SocialMediaButton, SocialMediaIcon, SocialMediaLinks, Subtitle, TagName, Text, TextImageBox, TextSide, Title, Works } from "../shared/pages/Home/style"
+import { Button, Card, CardBox, CardContent, CardIcon, CenterContainer, Companies, ContactLinks, Container, Content, Duration, Header, Image, ImageBackLine, ImageBox, ImageContainer, InvertedTitle, Line, Logo, Main, Nav, Roles, RolesAndDuration, SocialMediaButton, SocialMediaIcon, SocialMediaLinks, Subtitle, TagName, Text, TextImageBox, TextSide, Title, Works } from "../shared/pages/Home/style"
 import Typical from "react-typical"
 
 
@@ -120,25 +120,27 @@ export default function Home() {
           <Subtitle>Space Application</Subtitle>
           <TextImageBox>
           <TextSide>A franchising application with all the functionalities that the biggest Dark Kitchen worldwide needed with both franchisee and franchisor interfaces in web, mobile and desktop.</TextSide>
-          <ImageBox>
+          <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
             <ImageContainer>
-              <Image src="assets/profile.jpeg" />
+              <Image src="assets/projectSpace.webp" />
             </ImageContainer>
             <ImageBackLine />
-          </ImageBox>
+          </ImageBox></a>
           </TextImageBox>
         </Main>
         <Main>
+        <InvertedTitle>
         <TagName>Website</TagName>
           <Subtitle>Enlight WS</Subtitle>
+        </InvertedTitle>
           <TextImageBox>
-          <TextSide>A website for the company that I found with co-workers. Enlight is a web company that takes ideas out of paper and help business improve in the technology century.  </TextSide>
-          <ImageBox>
+          <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
             <ImageContainer>
-              <Image src="assets/profile.jpeg" />
+              <Image src="assets/projectEnlight.webp" />
             </ImageContainer>
             <ImageBackLine  />
-          </ImageBox>
+          </ImageBox></a>
+          <TextSide style={{textAlign: "right"}} >A website for the company that I found with co-workers. Enlight is a web company that takes ideas out of paper and help business improve in the technology century.</TextSide>
           </TextImageBox>
         </Main>
         <Main>
@@ -146,20 +148,22 @@ export default function Home() {
           <Subtitle>Kuroi Kuma</Subtitle>
           <TextImageBox>
           <TextSide>A visual identity maded for a telemedicine business for japanese founders. The identity focus on health-care and kanjis to englobe all the history and prestigious of the brand.</TextSide>
-          <ImageBox>
+          <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
             <ImageContainer>
-              <Image src="assets/profile.jpeg" />
+              <Image src="assets/projectKuroi.webp" />
             </ImageContainer>
             <ImageBackLine />
-          </ImageBox>
+          </ImageBox></a>
           </TextImageBox>
         </Main>
         <Line />
         <Main>
+          <CenterContainer>
           <TagName>What`s next?</TagName>
           <Subtitle>Get in touch</Subtitle>
           <Text>If you have any questions, please don’t hesitate to contact me.</Text>
           <a href="mailto:felipelagesstefenoni@gmail.com"><Button>Say Hello</Button></a>
+          </CenterContainer>
         </Main>
         <Text>Designed with Figma & Built using React by Felipe Lages Stefenoni</Text>
       </Content>
