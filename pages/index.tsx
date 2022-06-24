@@ -1,15 +1,19 @@
-import { Button, Card, CardBox, CardContent, CardIcon, CenterContainer, Companies, ContactLinks, Container, Content, Duration, Header, Image, ImageBackLine, ImageBox, ImageContainer, InvertedTitle, Line, Logo, Main, Nav, Roles, RolesAndDuration, SocialMediaButton, SocialMediaIcon, SocialMediaLinks, Subtitle, TagName, Text, TextImageBox, TextSide, Title, Works } from "../shared/pages/Home/style"
+import { BarHoverButton, Button, Card, CardBox, CardContent, CardIcon, CenterContainer, Companies, ContactLinks, Container, Content, Duration, Header, Image, ImageBackLine, ImageBox, ImageContainer, Line, Logo, Main, Nav, Roles, RolesAndDuration, SocialMediaButton, SocialMediaIcon, SocialMediaLinks, Subtitle, TagName, Text, TextDiv, TextImageBox, TextSide, Title, Works } from "../shared/pages/Home/style"
 import Typical from "react-typical"
+import Link from "next/link"
 
 
 export default function Home() {
+
+
+
   return (
     <Container>
       <Content>
         <Header>
           <Logo src="/assets/logo.svg"/>
           <Nav>
-            <a href="/assets/iconTwitter.svg" download><Button>Resume</Button></a>
+          <a href="/assets/resume.pdf" target="_blank"><Button>Resume<BarHoverButton>Resume</BarHoverButton></Button></a>
           </Nav>
         </Header>
         <Main>
@@ -22,21 +26,23 @@ export default function Home() {
               1000]}
           />
           </Title>
-        <Text>I’m Felipe Stefenoni, a brazilian based UI Designer and Front-end developer. I specialise in interface design applications from web and mobile with a focus on simplicity & usability.</Text>
+        <Text>I’m <span style={{color:"#64ffda"}}>Felipe Stefenoni</span>, a brazilian based UI Designer and Front-end developer. I specialise in interface design applications from web and mobile with a focus on simplicity & usability.</Text>
         <ContactLinks>
           <SocialMediaLinks>
             <SocialMediaButton href="https://twitter.com/Lipping10" target="_blank"><SocialMediaIcon src="/assets/iconTwitter.svg"></SocialMediaIcon></SocialMediaButton>
             <SocialMediaButton href="https://www.linkedin.com/in/felipelages/" target="_blank"><SocialMediaIcon src="/assets/iconLinkedin.svg"></SocialMediaIcon></SocialMediaButton>
             <SocialMediaButton href="https://github.com/Lipping" target="_blank"><SocialMediaIcon src="/assets/iconGithub.svg"></SocialMediaIcon></SocialMediaButton>
           </SocialMediaLinks>
-          <a href="mailto:felipelagesstefenoni@gmail.com"><Button>Email me</Button></a>
+          <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Email me<BarHoverButton>Email me</BarHoverButton></Button></a>
         </ContactLinks>
         </Main>
         <Line />
         <Main>
+        <TextImageBox>
+        <TextDiv>
           <Subtitle>About me</Subtitle>
-          <TextImageBox>
           <TextSide>Hello! My name is Felipe Lages Stefenoni, I graduated as a Graphic Designer in 2019 at the Federal University of Espírito Santo. I’m passionate about the mix of design and technology, that’s why I decided to specialise in both areas. </TextSide>
+          </TextDiv>
           <ImageBox>
             <ImageContainer>
               <Image src="assets/profile.jpeg" />
@@ -116,10 +122,13 @@ export default function Home() {
         <Main>
           <Subtitle>Projects</Subtitle>
           <Text>Recently projects that I have worked on:</Text>
+        <TextImageBox>
+          <TextDiv>
           <TagName>Application</TagName>
           <Subtitle>Space Application</Subtitle>
-          <TextImageBox>
+          
           <TextSide>A franchising application with all the functionalities that the biggest Dark Kitchen worldwide needed with both franchisee and franchisor interfaces in web, mobile and desktop.</TextSide>
+          </TextDiv>
           <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
             <ImageContainer>
               <Image src="assets/projectSpace.webp" />
@@ -129,25 +138,27 @@ export default function Home() {
           </TextImageBox>
         </Main>
         <Main>
-        <InvertedTitle>
-        <TagName>Website</TagName>
-          <Subtitle>Enlight WS</Subtitle>
-        </InvertedTitle>
           <TextImageBox>
-          <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
-            <ImageContainer>
-              <Image src="assets/projectEnlight.webp" />
-            </ImageContainer>
+            <TextDiv>
+              <TagName>Website</TagName>
+              <Subtitle>Enlight WS</Subtitle>
+              <TextSide>A website for the company that I found with co-workers. Enlight is a web company that takes ideas out of paper and help business improve in the technology century.</TextSide>
+          </TextDiv>
+            <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
+              <ImageContainer>
+                <Image src="assets/projectEnlight.webp" />
+              </ImageContainer>
             <ImageBackLine  />
-          </ImageBox></a>
-          <TextSide style={{textAlign: "right"}} >A website for the company that I found with co-workers. Enlight is a web company that takes ideas out of paper and help business improve in the technology century.</TextSide>
+            </ImageBox></a>
           </TextImageBox>
         </Main>
         <Main>
+        <TextImageBox>
+        <TextDiv>
         <TagName>Branding</TagName>
           <Subtitle>Kuroi Kuma</Subtitle>
-          <TextImageBox>
           <TextSide>A visual identity maded for a telemedicine business for japanese founders. The identity focus on health-care and kanjis to englobe all the history and prestigious of the brand.</TextSide>
+          </TextDiv>
           <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
             <ImageContainer>
               <Image src="assets/projectKuroi.webp" />
@@ -162,10 +173,11 @@ export default function Home() {
           <TagName>What`s next?</TagName>
           <Subtitle>Get in touch</Subtitle>
           <Text>If you have any questions, please don’t hesitate to contact me.</Text>
-          <a href="mailto:felipelagesstefenoni@gmail.com"><Button>Say Hello</Button></a>
+          <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Say Hello<BarHoverButton>Say Hello</BarHoverButton></Button></a>
+          <Text>Designed with Figma & Built using React by Felipe Lages Stefenoni</Text>
           </CenterContainer>
         </Main>
-        <Text>Designed with Figma & Built using React by Felipe Lages Stefenoni</Text>
+       
       </Content>
     </Container>
   )
