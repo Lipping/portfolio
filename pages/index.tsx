@@ -1,19 +1,21 @@
 import { BarHoverButton, Button, Card, CardBox, CardContent, CardIcon, CenterContainer, Companies, ContactLinks, Container, Content, Duration, Header, Image, ImageBackLine, ImageBox, ImageContainer, Line, Logo, Main, Nav, Roles, RolesAndDuration, SocialMediaButton, SocialMediaIcon, SocialMediaLinks, Subtitle, TagName, Text, TextDiv, TextImageBox, TextSide, Title, Works } from "../shared/pages/Home/style"
 import Typical from "react-typical"
 import Link from "next/link"
+import { useState } from "react"
 
 
 export default function Home() {
 
-
+  const [animation, setAnimation] = useState(false)
 
   return (
+
     <Container>
       <Content>
         <Header>
           <Logo src="/assets/logo.svg"/>
           <Nav>
-          <a href="/assets/resume.pdf" target="_blank"><Button>Resume<BarHoverButton>Resume</BarHoverButton></Button></a>
+          <a href="/assets/resume.pdf" target="_blank"><Button onMouseOut={() => setAnimation(true)}>Resume<BarHoverButton animation={false}>Resume</BarHoverButton></Button></a>
           </Nav>
         </Header>
         <Main>
@@ -33,7 +35,7 @@ export default function Home() {
             <SocialMediaButton href="https://www.linkedin.com/in/felipelages/" target="_blank"><SocialMediaIcon src="/assets/iconLinkedin.svg"></SocialMediaIcon></SocialMediaButton>
             <SocialMediaButton href="https://github.com/Lipping" target="_blank"><SocialMediaIcon src="/assets/iconGithub.svg"></SocialMediaIcon></SocialMediaButton>
           </SocialMediaLinks>
-          <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Email me<BarHoverButton>Email me</BarHoverButton></Button></a>
+          <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Email me<BarHoverButton animation={false}>Email me</BarHoverButton></Button></a>
         </ContactLinks>
         </Main>
         <Line />
@@ -173,7 +175,7 @@ export default function Home() {
           <TagName>What`s next?</TagName>
           <Subtitle>Get in touch</Subtitle>
           <Text>If you have any questions, please don’t hesitate to contact me.</Text>
-          <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Say Hello<BarHoverButton>Say Hello</BarHoverButton></Button></a>
+          <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Say Hello<BarHoverButton animation={false}>Say Hello</BarHoverButton></Button></a>
           <Text>Designed with Figma & Built using React by Felipe Lages Stefenoni</Text>
           </CenterContainer>
         </Main>

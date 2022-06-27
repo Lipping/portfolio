@@ -1,6 +1,9 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-
+interface IButtonProps {
+    animation: false;
+}
 
 export const Container = styled.div`
     display: flex;
@@ -84,9 +87,18 @@ export const Button = styled.button`
         color: #121212;
     }
     }
+    
+    @keyframes reverseFunnyBar {
+    0% {
+        width:100%;
+    }
+    100%{
+        width:0;
+    }
+    }
 `;
 
-export const BarHoverButton = styled.div`
+export const BarHoverButton = styled.div<IButtonProps>`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +109,8 @@ export const BarHoverButton = styled.div`
     left:0;
     color: transparent;
     white-space: nowrap;
+    ${props => css`
+    animation: reverseFunnyBar .3s normal; `}
 `;
 
 export const Main = styled.main`
@@ -213,10 +227,16 @@ export const ImageBox = styled.div`
     display: flex;
     width: 304px;
     margin-top: 96px;
+    cursor:pointer;
     &:hover > div {
         transition: all 0.5s ease-in-out;
         background-color: #64FFDA;
     }
+    &:hover > div:first-child {
+        transition: all 0.5s ease-in-out;
+        margin-top: -16px;
+        margin-left: -32px;
+    } 
 
     @media (max-width: 738px) {
         margin-top: 0; 
@@ -229,6 +249,7 @@ export const ImageBackLine = styled.div`
     height:304px;
     border:1px solid #64FFDA;
     margin-top: 16px;
+    transition: all 0.5s ease-in-out;
     &:hover {
         background-color: #64FFDA;
     }
@@ -243,14 +264,9 @@ export const ImageContainer = styled.div`
     height:304px;
     position: absolute;
     margin-left: -16px;
-    cursor:pointer;
     color: #64FFDA;
     background-color: #64FFDA;
-    &:hover {
-        transition: all 0.5s ease-in-out;
-        margin-top: -16px;
-        margin-left: -32px;
-    }
+    transition: all 0.5s ease-in-out;
 `;
 
 export const Image = styled.img`
