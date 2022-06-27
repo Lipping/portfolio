@@ -1,12 +1,10 @@
 import { BarHoverButton, Button, Card, CardBox, CardContent, CardIcon, CenterContainer, Companies, ContactLinks, Container, Content, Duration, Header, Image, ImageBackLine, ImageBox, ImageContainer, Line, Logo, Main, Nav, Roles, RolesAndDuration, SocialMediaButton, SocialMediaIcon, SocialMediaLinks, Subtitle, TagName, Text, TextDiv, TextImageBox, TextSide, Title, Works } from "../shared/pages/Home/style"
 import Typical from "react-typical"
-import Link from "next/link"
-import { useState } from "react"
 
 
 export default function Home() {
 
-  const [animation, setAnimation] = useState(false)
+  // const [animation, setAnimation] = useState(false)
 
   return (
 
@@ -16,10 +14,9 @@ export default function Home() {
           <Logo src="/assets/logo.svg" />
           <Nav>
             <a href="/assets/resume.pdf" target="_blank">
-              <Button
-                onMouseOut={() => setAnimation(true)}>
+              <Button>
                 Resume
-                <BarHoverButton animation={animation}>
+                <BarHoverButton>
                   Resume
                 </BarHoverButton>
               </Button>
@@ -52,7 +49,7 @@ export default function Home() {
             <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank">
               <Button>
                 Email me
-                <BarHoverButton animation={animation}>
+                <BarHoverButton>
                   Email me
                 </BarHoverButton>
               </Button>
@@ -196,7 +193,7 @@ export default function Home() {
             <TagName>What`s next?</TagName>
             <Subtitle>Get in touch</Subtitle>
             <Text>If you have any questions, please don’t hesitate to contact me.</Text>
-            <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Say Hello<BarHoverButton animation={false}>Say Hello</BarHoverButton></Button></a>
+            <a href="mailto:felipelagesstefenoni@gmail.com" target="_blank"><Button>Say Hello<BarHoverButton>Say Hello</BarHoverButton></Button></a>
             <Text>Designed with Figma & Built using React by Felipe Lages Stefenoni</Text>
           </CenterContainer>
         </Main>

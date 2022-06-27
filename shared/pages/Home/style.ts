@@ -1,9 +1,9 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-interface IButtonProps {
-    animation: boolean;
-}
+// interface IButtonProps {
+//     animation: boolean;
+// }
 
 export const Container = styled.div`
     display: flex;
@@ -99,7 +99,7 @@ export const Button = styled.button`
     }
 `;
 
-export const BarHoverButton = styled.div<IButtonProps>`
+export const BarHoverButton = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,9 +110,7 @@ export const BarHoverButton = styled.div<IButtonProps>`
     left:0;
     color: transparent;
     white-space: nowrap;
-    animation: ${props => (props.animation ? "reverseFunnyBar .3s normal" : "" )}
-    /* ${props => css`
-    animation: reverseFunnyBar .3s normal; `} */
+    animation: reverseFunnyBar .3s normal;
 `;
 
 export const Main = styled.main`
