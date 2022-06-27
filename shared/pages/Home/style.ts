@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 interface IButtonProps {
-    animation: false;
+    animation: boolean;
 }
 
 export const Container = styled.div`
@@ -62,6 +62,7 @@ export const Button = styled.button`
     &:hover div{
     animation: funnyBar 1s ease-in forwards;
     }
+    
 
     @keyframes funnyBar {
     0% {
@@ -109,8 +110,9 @@ export const BarHoverButton = styled.div<IButtonProps>`
     left:0;
     color: transparent;
     white-space: nowrap;
-    ${props => css`
-    animation: reverseFunnyBar .3s normal; `}
+    animation: ${props => (props.animation ? "reverseFunnyBar .3s normal" : "" )}
+    /* ${props => css`
+    animation: reverseFunnyBar .3s normal; `} */
 `;
 
 export const Main = styled.main`
