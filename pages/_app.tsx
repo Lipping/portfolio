@@ -3,7 +3,7 @@ import { hotjar } from 'react-hotjar'
 import { useEffect } from 'react'
 import { Router, useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
-
+import Head from 'next/head'
 
 
 function App({ Component, pageProps }) {
@@ -24,6 +24,9 @@ function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+       <title>Portfolio | Felipe Lages</title>
+      </Head>
       {globalStyles}
       <Component {...pageProps} />
     </>

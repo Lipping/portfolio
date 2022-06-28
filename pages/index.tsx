@@ -2,12 +2,16 @@ import { BarHoverButton, Button, Card, CardBox, CardContent, CardIcon, CenterCon
 import Typical from "react-typical"
 
 
+
 export default function Home() {
 
   // const [animation, setAnimation] = useState(false)
 
   return (
-
+    <>
+    
+    
+    
     <Container>
       <Content>
         <Header>
@@ -200,5 +204,6 @@ export default function Home() {
 
       </Content>
     </Container>
+    </>
   )
 }
