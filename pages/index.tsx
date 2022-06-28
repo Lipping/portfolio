@@ -153,7 +153,7 @@ export default function Home() {
 
               <TextSide>A franchising application with all the functionalities that the biggest Dark Kitchen worldwide needed with both franchisee and franchisor interfaces in web, mobile and desktop.</TextSide>
             </TextDiv>
-            <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
+            <a href="https://www.behance.net/gallery/138779707/Landing-Page-Space-App" target="_blank"><ImageBox>
               <ImageContainer>
                 <Image src="assets/projectSpace.webp" />
               </ImageContainer>
@@ -168,7 +168,7 @@ export default function Home() {
               <Subtitle>Enlight WS</Subtitle>
               <TextSide>A website for the company that I found with co-workers. Enlight is a web company that takes ideas out of paper and help business improve in the technology century.</TextSide>
             </TextDiv>
-            <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
+            <a href="https://www.behance.net/gallery/146758559/Brand-Enlight-Web-Solutions" target="_blank"><ImageBox>
               <ImageContainer>
                 <Image src="assets/projectEnlight.webp" />
               </ImageContainer>
@@ -183,7 +183,7 @@ export default function Home() {
               <Subtitle>Kuroi Kuma</Subtitle>
               <TextSide>A visual identity made for a telemedicine business for japanese founders. The identity focus on health-care and kanjis to englobe all the history and prestigious of the brand.</TextSide>
             </TextDiv>
-            <a href="https://www.behance.net/felipelages" target="_blank"><ImageBox>
+            <a href="https://www.behance.net/gallery/147043375/Brand-Kuroi-Kuma" target="_blank"><ImageBox>
               <ImageContainer>
                 <Image src="assets/projectKuroi.webp" />
               </ImageContainer>
