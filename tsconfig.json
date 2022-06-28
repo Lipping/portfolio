@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "lib/gtag.js"  ],
   "exclude": [
     "node_modules"
   ]
