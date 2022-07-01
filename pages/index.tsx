@@ -153,7 +153,7 @@ export default function Home() {
 
               <TextSide>A franchising application with all the functionalities that the biggest Dark Kitchen worldwide needed with both franchisee and franchisor interfaces in web, mobile and desktop.</TextSide>
             </TextDiv>
-            <a href="https://www.behance.net/gallery/138779707/Landing-Page-Space-App" target="_blank"><ImageBox>
+            <a href="https://www.behance.net/gallery/147268559/Space-SaaS-UX-Study-Case" target="_blank"><ImageBox>
               <ImageContainer>
                 <Image src="assets/projectSpace.webp" />
               </ImageContainer>
