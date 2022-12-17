@@ -40,9 +40,6 @@ export default function Home() {
           <Text>I’m <span style={{ color: "#64ffda" }}>Felipe Stefenoni</span>, a brazilian based UI Designer and Front-end developer. I specialize in interface design applications from web and mobile with a focus on simplicity & usability.</Text>
           <ContactLinks>
             <SocialMediaLinks>
-              <SocialMediaButton href="https://twitter.com/Lipping10" target="_blank">
-                <SocialMediaIcon src="/assets/iconTwitter.svg" />
-              </SocialMediaButton>
               <SocialMediaButton href="https://www.linkedin.com/in/felipelages/" target="_blank">
                 <SocialMediaIcon src="/assets/iconLinkedin.svg" />
               </SocialMediaButton>
@@ -124,20 +121,23 @@ export default function Home() {
           <Subtitle>Work</Subtitle>
           <Works>
             <Companies>
-              <Text>Enlight Web Solutions</Text>
+              <Text>Qualidata</Text>
+              <Text>Metrobi Inc</Text>
               <Text>ATW Delivery Brands</Text>
               <Text>Freelancer</Text>
             </Companies>
             <RolesAndDuration>
               <Roles>
-                <Text>Co-Founder</Text>
+                <Text>Front-end Developer</Text>
+                <Text>Product Designer</Text>
                 <Text>UI Designer</Text>
                 <Text>Freelancer</Text>
               </Roles>
               <Duration>
                 <Text>2022 - now</Text>
-                <Text>2021 - now</Text>
-                <Text>2018 - now</Text>
+                <Text>2022 - 2022</Text>
+                <Text>2021 - 2022</Text>
+                <Text>2018 - 2021</Text>
               </Duration>
             </RolesAndDuration>
           </Works>
